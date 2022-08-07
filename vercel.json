@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "public": true,
+    "name": "generic-site",
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/api" }
+    ],
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/generic-site/browser/**"
+      }
+    }
+  }

@@ -4,14 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run generic-site:serve-ssr",
     "serve:ssr": "node dist/generic-site/server/main.js",
     "build:ssr": "ng build && ng run generic-site:server",
     "prerender": "ng run generic-site:prerender",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
